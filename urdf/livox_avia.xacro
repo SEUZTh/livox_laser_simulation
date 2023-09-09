@@ -65,7 +65,8 @@
   <xacro:macro name="Livox_AVIA" params="visualize:=True name:=livox">
     <link name="${name}_base">
       <xacro:null_inertial/>
-      <visual> 
+      <visual>
+      <!-- 位置和姿态 -->
         <origin xyz="0.00 0 0.00" rpy="0 0 0"/>
         <geometry>
           <mesh filename="package://livox_laser_simulation/meshes/livox_mid40.dae">
